@@ -1,7 +1,7 @@
 name: CI-CD
 on: 
   push:
-    branches: ["main"]
+    branches: ["NiltonPita-patch-1"]
   workflow_dispatch:
 jobs:
   CI:
