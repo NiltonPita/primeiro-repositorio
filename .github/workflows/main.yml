@@ -14,14 +14,4 @@ jobs:
       with:
        username: ${{ secrets.DOCKERHUB_USERNAME }}
        password: ${{ secrets.DOCKERHUB_TOKEN }} 
-
-    - name: Build da Imagem Docker
-      uses: docker/build-push-action@v5.3.0
-      with:
-        context: ./src
-        file: ./src/Dockerfile
-        push: true
-        tags: | 
-          niltonpita/aula-primeira-pipeline:v${{ github.run_number }} 
-          niltonpita/aula-primeira-pipeline:latest 
     
